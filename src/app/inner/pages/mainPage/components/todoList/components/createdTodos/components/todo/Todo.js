@@ -55,10 +55,10 @@ const Todo = ({ isChecked, text: text_default,  todoId,   onCheckedChange, onTex
             </label>
 
             <div className={ toolIcon } onClick={ handleClickEditToolIcon } >
-                <img src={ isEditing ? edit2 : edit } />
+                <img src={ isEditing ? edit2 : edit } alt='edt' />
             </div>
             <div className={ toolIcon } onClick={handleDelete} >
-                <img src={ close } />
+                <img src={ close } alt='cls' />
             </div>
         </li>
     )

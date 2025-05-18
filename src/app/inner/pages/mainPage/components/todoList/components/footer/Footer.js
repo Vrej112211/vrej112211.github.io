@@ -30,7 +30,7 @@ const Footer = ({}) => {
             </div>
 
             <div className={`${removeBtn} ${!checkedTodosIds.length && disabled}`} onClick={!checkedTodosIds.length ? null : handleClickRemoveCheckedBtn}>
-                Remove checked <img src={close} />
+                Remove checked <img src={close} alt='cls' />
             </div>
         </div>
     )
