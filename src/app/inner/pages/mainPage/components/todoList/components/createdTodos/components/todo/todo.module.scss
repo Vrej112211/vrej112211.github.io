@@ -26,17 +26,17 @@
         }
 
         label {
-            $textSize: 12px;
+            $textSize: 15px;
             $textColor: #3AA6B9;
 
-            padding: 7px 1px 6px 4px;
+            padding: 8px 2px 7px 5px;
             cursor: pointer;
             display: grid;
             grid-template-columns: max-content auto;
             column-gap: 5px;
 
             input[type="checkbox"] {
-                width: 12px;
+                width: 14px;
                 cursor: pointer;
             }
 
@@ -57,11 +57,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 27px;
+            width: 28px;
 
             img {
                 cursor: pointer;
-                height: 15px;
+                height: 16px;
             }
         }
     }
