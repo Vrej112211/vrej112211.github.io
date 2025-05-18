@@ -1,0 +1,67 @@
+    li.todo {
+        $borderColor: #ffeffb;
+        $defaultBgColor: #D4F6FF;
+
+        background: $defaultBgColor;
+        display: grid;
+        grid-template-columns: 1fr max-content max-content;
+        border-top: 1px solid $borderColor;
+        // align-items: center;;
+
+        &:last-child {
+            border-bottom: 1px solid $borderColor;
+        }
+
+        &.checked {
+            background: var(--color4);
+            label span {
+                text-decoration: line-through;
+            }
+        }
+        &.editing.checked label input[type='text'] {
+            background: $defaultBgColor;
+        }
+        &.warning {
+            background: rgb(255, 203, 82) !important;
+        }
+
+        label {
+            $textSize: 12px;
+            $textColor: #3AA6B9;
+
+            padding: 7px 1px 6px 4px;
+            cursor: pointer;
+            display: grid;
+            grid-template-columns: max-content auto;
+            column-gap: 5px;
+
+            input[type="checkbox"] {
+                width: 12px;
+                cursor: pointer;
+            }
+
+            span {
+                font-size: $textSize;
+                color: $textColor;
+            }
+
+            input[type="text"] {
+                color: $textColor;
+                font-size: $textSize;
+                border: transparent;
+                outline: none;
+            }
+        }
+
+        .toolIcon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 27px;
+
+            img {
+                cursor: pointer;
+                height: 15px;
+            }
+        }
+    }
